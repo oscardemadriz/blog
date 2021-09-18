@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://oscardemadriz.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oscardemadriz.github.io/" rel="alternate" type="text/html" /><updated>2021-09-18T18:54:22+02:00</updated><id>https://oscardemadriz.github.io/feed.xml</id><title type="html">Oscar Mad</title><subtitle>Blog personal de tecnología/hacking y demás.</subtitle><author><name>Oscar Sanchez</name></author><entry><title type="html">Productividad++ en windows</title><link href="https://oscardemadriz.github.io/tips-windows-productivy.html" rel="alternate" type="text/html" title="Productividad++ en windows" /><published>2021-09-16T00:00:00+02:00</published><updated>2021-09-16T00:00:00+02:00</updated><id>https://oscardemadriz.github.io/tips-windows-productivy</id><content type="html" xml:base="https://oscardemadriz.github.io/tips-windows-productivy.html">&lt;p&gt;Para buscar en el historico de la terminal se usa:
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + R&lt;/code&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;./assets/img/posts/20210915/post-2-reverse.png&quot; /&gt;&lt;/center&gt;</content><author><name>Oscar Sanchez</name></author><category term="tutorials" /><category term="windows" /><category term="tips" /><summary type="html">Para buscar en el historico de la terminal se usa: Ctrl + R</summary></entry><entry><title type="html">Exportando conexiones DBeaver</title><link href="https://oscardemadriz.github.io/import-export-dbeaver.html" rel="alternate" type="text/html" title="Exportando conexiones DBeaver" /><published>2021-09-15T00:00:00+02:00</published><updated>2021-09-15T00:00:00+02:00</updated><id>https://oscardemadriz.github.io/import-export-dbeaver</id><content type="html" xml:base="https://oscardemadriz.github.io/import-export-dbeaver.html">&lt;p&gt;En ocasiones preparar el entorno de trabajo para comenzar en un proyecto puede ser desde tan simple como &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; como tener que bajar una VPN, realizar una tarea que perfectamente podria ser una prueba de un Escape room o parte de un CTF.&lt;/p&gt;
+
+&lt;p&gt;En este caso, tras trasterar con el &lt;strong&gt;DBeaver&lt;/strong&gt;, he encontrado que se pueden exportar las carpetas de proyecto tan simple como:&lt;/p&gt;
+
+&lt;p&gt;Selecionar en la pestaña &lt;strong&gt;Proyectos&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Seleccionar el proyecto en cuestion, en mi caso &lt;strong&gt;SuperProyecto&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Archivo -&amp;gt; Exportar&lt;/strong&gt;
+Y podremos exportar el fichero siguiendo el asistente:&lt;/p&gt;
+
+&lt;center&gt;&lt;img src=&quot;./assets/img/posts/20210915/post 1 dbeaber export.png&quot; /&gt;&lt;/center&gt;
+
+&lt;p&gt;Una vez exportado, se genera un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.dbp&lt;/code&gt; el cual servira para importar.&lt;/p&gt;
+
+&lt;p&gt;Combinado con un gestor de contraseñas como &lt;strong&gt;Keeper&lt;/strong&gt;, podemos compartir a los compañeros de proyecto todo la info del proyecto del tiron.&lt;/p&gt;
+
+&lt;p&gt;Para importar &lt;strong&gt;Archivo &amp;gt; Importar&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Oscar **Sanchez**</name></author><category term="tutorials" /><category term="db" /><category term="tips" /><category term="conexiones" /><summary type="html">En ocasiones preparar el entorno de trabajo para comenzar en un proyecto puede ser desde tan simple como git clone como tener que bajar una VPN, realizar una tarea que perfectamente podria ser una prueba de un Escape room o parte de un CTF.</summary></entry></feed>

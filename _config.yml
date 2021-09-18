@@ -1,9 +1,9 @@
 # Site settings
-title: The Minimum Viable Model
-description: 'Artificial Intelligence trends and concepts made easy.' # this means to ignore newlines until "baseurl:"
+title: Oscar Mad
+description: 'Blog personal de tecnología/hacking y demás.' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://the-mvm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://oscardemadriz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/img/branding/MVM-logo-full.svg"
 logo-icon: "/assets/img/branding/MVM-symbol.svg"
 logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG file
@@ -24,29 +24,28 @@ logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
-author: Armando Maynez # add your name
-author-pic: Myself_Neon_grey.jpg
-about-author: Engineer, industry executive, research enthusiast. Avid learner with diverse interests in coding, machine learning, artificial intelligence and reinforcement learning. 17+ years of experience working in multinational corporations.
-
+author: Oscar Sanchez # add your name
+author-pic: Myself.jpg
+about-author: Amante de la tecnología, fotografo de día, improvisador de noche.
 # Contact links
-email: armando.maynez@gmail.com # Add your Email address
+email: oscardemadriz@gmail.com # Add your Email address
 phone: # Add your Phone number
-website: https://amaynez.github.io # Add your website
-linkedin: amaynez # Add your Linkedin handle
-github: amaynez # Add your Github handle
-twitter: '@MvmThe' # Add your Twitter handle
-bandcamp: armandomaynez # Add your Bandcamp username
+website: https://oscardemadriz.github.io # Add your website
+linkedin: oscardemadriz # Add your Linkedin handle
+github: oscardemadriz # Add your Github handle
+twitter: '@oscardemadriz' # Add your Twitter handle
+#bandcamp: armandomaynez # Add your Bandcamp username
 
 # Newsletter
-mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
+#mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
 
-# Disqus
-discus_identifier: amaynez-github-io # Add your discus identifier
-comments_curtain: yes # leave empty to show the disqus embed directly
+# # Disqus
+# discus_identifier: amaynez-github-io # Add your discus identifier
+# comments_curtain: yes # leave empty to show the disqus embed directly
 
-# Tracker
-analytics: G-R8SZS2YBZK
-fbadmin: ar.maybach
+# # Tracker
+# analytics: G-R8SZS2YBZK
+# fbadmin: ar.maybach
 
 # Paginate
 paginate: 6
@@ -63,7 +62,7 @@ compress_html:
   startings: [html, head, body]
 
 # Outputting
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+#timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 category_archive:
   type: liquid
