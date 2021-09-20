@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://oscardemadriz.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oscardemadriz.github.io/" rel="alternate" type="text/html" /><updated>2021-09-18T18:54:22+02:00</updated><id>https://oscardemadriz.github.io/feed.xml</id><title type="html">Oscar Mad</title><subtitle>Blog personal de tecnología/hacking y demás.</subtitle><author><name>Oscar Sanchez</name></author><entry><title type="html">Productividad++ en windows</title><link href="https://oscardemadriz.github.io/tips-windows-productivy.html" rel="alternate" type="text/html" title="Productividad++ en windows" /><published>2021-09-16T00:00:00+02:00</published><updated>2021-09-16T00:00:00+02:00</updated><id>https://oscardemadriz.github.io/tips-windows-productivy</id><content type="html" xml:base="https://oscardemadriz.github.io/tips-windows-productivy.html">&lt;p&gt;Para buscar en el historico de la terminal se usa:
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://oscardemadriz.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://oscardemadriz.github.io/" rel="alternate" type="text/html" /><updated>2021-09-20T17:11:06+02:00</updated><id>https://oscardemadriz.github.io/feed.xml</id><title type="html">Oscar Mad</title><subtitle>Blog personal de tecnología/hacking y demás.</subtitle><author><name>Oscar Sanchez</name></author><entry><title type="html">Docker + Wordpress</title><link href="https://oscardemadriz.github.io/using-docker-and-wordpress.html" rel="alternate" type="text/html" title="Docker + Wordpress" /><published>2021-09-20T00:00:00+02:00</published><updated>2021-09-20T00:00:00+02:00</updated><id>https://oscardemadriz.github.io/using-docker-and-wordpress</id><content type="html" xml:base="https://oscardemadriz.github.io/using-docker-and-wordpress.html">&lt;p&gt;En uno de los proyectos en los que estamos trabajando para un cliente, hemos tenido que levantar un wordpress con varias extensiones, para ello partimos de la base de wordpress y añadimos las extensiones necesarias en el &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt; para generar la imagen lista:&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;FROM wordpress:4.9 as my-wordpress&lt;/span&gt;
+
+
+&lt;span class=&quot;s&quot;&gt;RUN  docker-php-ext-install mbstring &amp;amp;&amp;amp; docker-php-ext-install exif&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;El comando &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-php-ext&lt;/code&gt; añadirá las extensiones directamente al Apache.&lt;/p&gt;
+
+&lt;p&gt;El siguiente paso sería generar un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker-compose.yml&lt;/code&gt; con la DB:&lt;/p&gt;
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3.3&quot;&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;services&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;image&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;mysql:5.7&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;restart&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;always&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;MYSQL_DATABASE&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;db&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;MYSQL_USER&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;user&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;MYSQL_PASSWORD&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;nutty_yippee&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;nutty_yippee&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3306:3306&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;expose&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;3306&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;db:/var/lib/mysql&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;wordpress&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;environment&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;WORDPRESS_DB_NAME&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;db&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;WORDPRESS_DB_USER&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;user&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;WORDPRESS_DB_HOST&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;db&quot;&lt;/span&gt;
+      &lt;span class=&quot;na&quot;&gt;WORDPRESS_DB_PASSWORD&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;nutty_yippee&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;na&quot;&gt;ports&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;80:80&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;expose&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;80&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;./public:/var/www/html&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;mem_limit&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;1g&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Names our volume&lt;/span&gt;
+&lt;span class=&quot;na&quot;&gt;volumes&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Dentro de la carpeta &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; es donde ubicaremos los archivos del Wordpress (wp-content / wp-admin).&lt;/p&gt;
+
+&lt;p&gt;Finalmente para lanzar el docker &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;docker compose up&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;level-up&quot;&gt;LEVEL UP&lt;/h2&gt;
+&lt;p&gt;Si añadimos un alias en windows creando un archivo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%userprofile%/dcu.cmd&lt;/code&gt; con el comando:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@echo off
+docker compose up
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Podemos levantar los contenedores con tan solo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;dcu&lt;/code&gt; en la terminal:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-cmd&quot;&gt;PS C:\Users\CDistrict\Documents\blog\tmp&amp;gt; dcu
+[+] Running 2/2
+ - Container tmp_db_1         Created                                                                                                                                                                                                       0.0s 
+ - Container tmp_wordpress_1  Recreated                                                                                                                                                                                                     1.1s 
+Attaching to db_1, wordpress_1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Photo by &lt;a href=&quot;https://unsplash.com/@mikedoherty?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Mike Doherty&lt;/a&gt; on &lt;a href=&quot;https://unsplash.com/s/photos/whale?utm_source=unsplash&amp;amp;utm_medium=referral&amp;amp;utm_content=creditCopyText&quot;&gt;Unsplash&lt;/a&gt;&lt;/p&gt;</content><author><name>Oscar Sanchez</name></author><category term="tutorials" /><category term="docker" /><category term="tips" /><summary type="html">En uno de los proyectos en los que estamos trabajando para un cliente, hemos tenido que levantar un wordpress con varias extensiones, para ello partimos de la base de wordpress y añadimos las extensiones necesarias en el Dockerfile para generar la imagen lista: ```yaml FROM wordpress:4.9 as my-wordpress</summary></entry><entry><title type="html">Productividad++ en windows</title><link href="https://oscardemadriz.github.io/tips-windows-productivy.html" rel="alternate" type="text/html" title="Productividad++ en windows" /><published>2021-09-16T00:00:00+02:00</published><updated>2021-09-16T00:00:00+02:00</updated><id>https://oscardemadriz.github.io/tips-windows-productivy</id><content type="html" xml:base="https://oscardemadriz.github.io/tips-windows-productivy.html">&lt;p&gt;Para buscar en el historico de la terminal se usa:
 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl + R&lt;/code&gt;&lt;/p&gt;
 
 &lt;center&gt;&lt;img src=&quot;./assets/img/posts/20210915/post-2-reverse.png&quot; /&gt;&lt;/center&gt;</content><author><name>Oscar Sanchez</name></author><category term="tutorials" /><category term="windows" /><category term="tips" /><summary type="html">Para buscar en el historico de la terminal se usa: Ctrl + R</summary></entry><entry><title type="html">Exportando conexiones DBeaver</title><link href="https://oscardemadriz.github.io/import-export-dbeaver.html" rel="alternate" type="text/html" title="Exportando conexiones DBeaver" /><published>2021-09-15T00:00:00+02:00</published><updated>2021-09-15T00:00:00+02:00</updated><id>https://oscardemadriz.github.io/import-export-dbeaver</id><content type="html" xml:base="https://oscardemadriz.github.io/import-export-dbeaver.html">&lt;p&gt;En ocasiones preparar el entorno de trabajo para comenzar en un proyecto puede ser desde tan simple como &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git clone&lt;/code&gt; como tener que bajar una VPN, realizar una tarea que perfectamente podria ser una prueba de un Escape room o parte de un CTF.&lt;/p&gt;

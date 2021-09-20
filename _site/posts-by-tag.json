@@ -23,8 +23,20 @@
     
       
   {
+  "tag" : "docker",
+  "posts" : [
+      
+      "./using-docker-and-wordpress.html"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "tips",
   "posts" : [
+      
+      "./using-docker-and-wordpress.html",
       
       "./tips-windows-productivy.html",
       

@@ -3,6 +3,19 @@
   
     
     <url>
+      <loc>https://oscardemadriz.github.io/using-docker-and-wordpress.html</loc>
+      
+        <lastmod>2021-09-20T00:00:00+02:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
       <loc>https://oscardemadriz.github.io/tips-windows-productivy.html</loc>
       
         <lastmod>2021-09-16T00:00:00+02:00</lastmod>
@@ -152,7 +165,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/404.html</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -167,7 +180,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/about.html</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -182,7 +195,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/all-posts.json</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -197,7 +210,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/archive.html</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -212,7 +225,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -227,7 +240,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/ipfs-404.html</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -242,7 +255,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/posts-by-tag.json</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -257,7 +270,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/search.json</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -274,7 +287,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/tag.html</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -289,7 +302,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/tags.html</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -304,7 +317,7 @@
     <url>
       <loc>https://oscardemadriz.github.io/feed.xml</loc>
       
-        <lastmod>2021-09-18T18:54:22+02:00</lastmod>
+        <lastmod>2021-09-20T17:11:06+02:00</lastmod>
       
       
         <changefreq>daily</changefreq>

@@ -240,6 +240,45 @@
 		<div class="post">
 			
 
+			<a class="post-list-title" href="./using-docker-and-wordpress.html">Docker + Wordpress</a>
+			
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2021-09-20T00:00:00+02:00">September 20, 2021</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+			<div class="post-excerpt">
+				<p>En uno de los proyectos en los que estamos trabajando para un cliente, hemos tenido que levantar un wordpress con varias extensiones, para ello partimos de la base de wordpress y añadimos las extensiones necesarias en el <code class="language-plaintext highlighter-rouge">Dockerfile</code> para generar la imagen lista:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">FROM wordpress:4.9 as my-wordpress</span><span class="s">RUN docker-php-ext-install mbstring &amp;&amp; docker-php-ext-install exif</span></code></pre></div></div><p>El comando <code class="language-plaintext highlighter-rouge">docker-php-ext</code> añadirá las extensiones directamente al Apache.</p><p>El siguiente paso sería generar un <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> con la DB:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">3.3"</span><span class="na">services</span><span class="pi">:</span> <span class="na">db</span><span class="pi">:</span> <span class="na">image</span><span class="pi">:</span> <span class="s">mysql:5.7</span> <span...<a class="read-more" href="./using-docker-and-wordpress.html"> read more</a>
+			</div>
+		</div>
+	
+		<div class="post">
+			
+
 			<a class="post-list-title" href="./tips-windows-productivy.html">Productividad++ en windows</a>
 			
 
