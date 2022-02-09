@@ -11,3 +11,5 @@
 /.vscode/
 /.idea/
 .liquidrc
+temp
+node_modules
