@@ -8,62 +8,67 @@
 <head>
 	<meta charset="utf-8">
 	<title>A falta de CI, bueno es Husky - Oscar Mad</title>
-	<link rel="canonical" href="https://oscardemadriz.github.io/missing-ci-use-husky-copy.html">
+	<link rel="canonical" href="https://oscardemadriz.github.io/missing-ci-use-husky.html">
 	<meta name="description" content="Blog personal de tecnología/hacking y demás.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://oscardemadriz.github.io"},
-  "headline": "A falta de CI, bueno es Husky",
-  "abstract": "",
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://oscardemadriz.github.io"
+    },
+    "headline": "A falta de CI, bueno es Husky",
+    "abstract": "",
     "keywords": "ci, devops",
     "wordcount": "188",
-    "image": ["https://oscardemadriz.github.io/assets/imgposts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg"],
-  "datePublished": "2021-09-22 00:00:00 +0200",
-  "dateModified": "2021-09-22 00:00:00 +0200",
-  "author": {
-    "@type": "Person",
-    "name": "Oscar Sanchez"},
-  "publisher": {
-    "@type":  "Organization",
-    "logo": {
+    "image": ["https://oscardemadriz.github.iouploads/james-padolsey-6WneSv56YVI-unsplash.jpg"],
+    "datePublished": "2021-09-22 00:00:00 +0200",
+    "dateModified": "2021-09-22 00:00:00 +0200",
+    "author": {
+      "@type": "Person",
+      "name": "Oscar Sanchez"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
         "@type": "ImageObject",
         "encodingFormat": "image/png",
-        "contentUrl": "https://oscardemadriz.github.io/assets/img/branding/MVM-symbol-black.png",
-        "url": "https://oscardemadriz.github.io/assets/img/branding/MVM-symbol-black.png"},
-    "name" : "Oscar Mad"}
-}
+        "contentUrl": "https://oscardemadriz.github.io/uploads/seta.png",
+        "url": "https://oscardemadriz.github.io/uploads/seta.png"
+      },
+      "name": "Oscar Mad"
+    }
+  }
 </script>
 <!-- Open Graph data -->
-<meta property="og:url" content="https://oscardemadriz.github.io/missing-ci-use-husky-copy.html"/>
-<meta property="og:type" content="article"/>
-<meta property="og:title" content="A falta de CI, bueno es Husky"/>
-<meta property="og:description" content=""/>
-<meta property="og:image" content="https://oscardemadriz.github.io/assets/imgposts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg"/>
-<meta property="og:image:alt" content="A falta de CI, bueno es Husky"/>
+<meta property="og:url" content="https://oscardemadriz.github.io/missing-ci-use-husky.html" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="A falta de CI, bueno es Husky" />
+<meta property="og:description" content="" />
+<meta property="og:image" content="https://oscardemadriz.github.iouploads/james-padolsey-6WneSv56YVI-unsplash.jpg" />
+<meta property="og:image:alt" content="A falta de CI, bueno es Husky" />
 <meta property="og:site_name" content="Oscar Mad" />
 <meta property="article:published_time" content="2021-09-22 00:00:00 +0200" />
 <meta property="article:modified_time" content="2021-09-22 00:00:00 +0200" />
-<meta property="article:tag" content="ci, devops" />
+<meta property="article:tag"
+  content="ci, devops" />
 <meta property="fb:admins" content="" />
 <!-- Schema.org markup for Google -->
 <meta itemprop="name" content="A falta de CI, bueno es Husky">
 <meta itemprop="description" content="">
-<meta itemprop="image" content="https://oscardemadriz.github.io/assets/imgposts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg">
+<meta itemprop="image" content="https://oscardemadriz.github.iouploads/james-padolsey-6WneSv56YVI-unsplash.jpg">
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@oscardemadriz">
 <meta name="twitter:title" content="A falta de CI, bueno es Husky">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="">
-<meta data-rh="true" name="twitter:label1" content="Word count"/>
-<meta data-rh="true" name="twitter:data1" content="188"/>
-<meta name="twitter:image:src" content="https://oscardemadriz.github.io/assets/img/posts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg">
+<meta data-rh="true" name="twitter:label1" content="Word count" />
+<meta data-rh="true" name="twitter:data1" content="188" />
+<meta name="twitter:image:src" content="https://oscardemadriz.github.io/assets/img/uploads/james-padolsey-6WneSv56YVI-unsplash.jpg">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#311e3e">
 	<!-- iOS Safari -->
@@ -139,8 +144,8 @@
 
 <section class="hidden">
   <div class="post">
-      <a  class="post-list-title" href="./missing-ci-use-husky-copy.html">A falta de CI, bueno es Husky</a>
-      
+    <a class="post-list-title" href="./missing-ci-use-husky.html">A falta de CI, bueno es Husky</a>
+    
 
   <span class = "post-card-meta">
   
@@ -170,9 +175,10 @@
   
   </span>
 
-        <div class="post-excerpt">
-            <p>En caso de que tu proyecto no pueda usar herramientas de integración continua en la nube como puede ser CircleCi o Jenkins.</p><p>O por otro lado que quieres que los tests se hagan antes del commit o comprobar el commit message, 🐶 Husky es tu amigo ;)</p><p>Vamos a crear un repo y un proyecto de node vacio así en un moment:</p><div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>husky-test<span class="nb">cd </span>husky-testgit initnpm init <span class="nt">-y</span></code></pre></div></div><p>Perfect tenemos repo y tenemos proyecto.Para instalar Husky usamos la <a href="https://typicode.github.io/husky/#/">guia official</a></p><div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx husky-initnpm <span class="nb">install</span> <span class="c"># npm</span></code></pre></div></div><p>Con Husky instalado podemos especificar Hooks que...<a class="read-more" href="./missing-ci-use-husky-copy.html"> read more</a>
-        </div>
+    <div class="post-excerpt">
+      <p>En caso de que tu proyecto no pueda usar herramientas de integración continua en la nube como puede ser CircleCi o Jenkins.</p><p>O por otro lado que quieres que los tests se hagan antes del commit o comprobar el commit message, 🐶 Husky es tu amigo ;)</p><p>Vamos a crear un repo y un proyecto de node vacio así en un moment:</p><div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>husky-test<span class="nb">cd </span>husky-testgit initnpm init <span class="nt">-y</span></code></pre></div></div><p>Perfect tenemos repo y tenemos proyecto.Para instalar Husky usamos la <a href="https://typicode.github.io/husky/#/">guia official</a></p><div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx husky-initnpm <span class="nb">install</span> <span class="c"># npm</span></code></pre></div></div><p>Con Husky instalado podemos especificar Hooks que...<a class="read-more" href="./missing-ci-use-husky.html">
+        read more</a>
+    </div>
   </div>
 </section>
 <div class="flex-container transparent">
@@ -260,7 +266,7 @@
       </nav>
       
       
-      <div class="logo"><a href="./"><img class="logo" id="logo" src="./assets/img/branding/MVM-logo-full.svg" alt="Oscar Mad"></a></div>
+      <div class="logo"><a href="./"><img class="logo" id="logo" src="./uploads/seta.png" alt="Oscar Mad"></a></div>
       <div class="search-icon-container">
         <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
       </div>
@@ -274,7 +280,8 @@
 <meta itemprop="datePublished" content="2021-09-22T00:00:00+02:00">
 
     <div class="page-image">
-      <div class="cover-image" style="background: url('./assets/img/posts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg') center no-repeat; background-size: cover;"></div>
+      <div class="cover-image"
+        style="background: url('.//uploads/james-padolsey-6WneSv56YVI-unsplash.jpg') center no-repeat; background-size: cover;"></div>
     </div>
     <div class="wrapper">
       <div class="page-content">
@@ -333,11 +340,11 @@
     <div class="share-hover side">
         <span class="share-button side"><svg fill="currentColor" width="25" height="25" class="side"><g fill-rule="evenodd"><path d="M15.6 5a.42.42 0 0 0 .17-.3.42.42 0 0 0-.12-.33l-2.8-2.79a.5.5 0 0 0-.7 0l-2.8 2.8a.4.4 0 0 0-.1.32c0 .12.07.23.16.3h.02a.45.45 0 0 0 .57-.04l2-2V10c0 .28.23.5.5.5s.5-.22.5-.5V2.93l2.02 2.02c.08.07.18.12.3.13.11.01.21-.02.3-.08v.01"></path><path d="M18 7h-1.5a.5.5 0 0 0 0 1h1.6c.5 0 .9.4.9.9v10.2c0 .5-.4.9-.9.9H6.9a.9.9 0 0 1-.9-.9V8.9c0-.5.4-.9.9-.9h1.6a.5.5 0 0 0 .35-.15A.5.5 0 0 0 9 7.5a.5.5 0 0 0-.15-.35A.5.5 0 0 0 8.5 7H7a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h11a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"></path></g></svg></span>
         <div class="share-icons side" id="sidebar-icons">
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=A falta de CI, bueno es Husky&url=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="facebook" href="https://facebook.com/sharer.php?u=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="reddit" href="http://www.reddit.com/submit?url=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html&title=A falta de CI, bueno es Husky" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
-            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html&title=A falta de CI, bueno es Husky&summary=&source=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a class="email" href="mailto:?subject=A falta de CI, bueno es Husky&body=%0A%0ARead more here: https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=A falta de CI, bueno es Husky&url=https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="facebook" href="https://facebook.com/sharer.php?u=https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="reddit" href="http://www.reddit.com/submit?url=https://oscardemadriz.github.io/missing-ci-use-husky.html&title=A falta de CI, bueno es Husky" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://oscardemadriz.github.io/missing-ci-use-husky.html&title=A falta de CI, bueno es Husky&summary=&source=https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="email" href="mailto:?subject=A falta de CI, bueno es Husky&body=%0A%0ARead more here: https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <a class="copy-link" onclick="copyToClipboard()" title="Copy to clipboard" rel="nofollow" target="_blank"><svg width="20px" fill="currentColor" class="side" viewBox="0 0 18 18"><path d="M16.94 1.1A3.7 3.7 0 0 0 14.3 0c-1 0-1.94.39-2.64 1.1L7.43 5.3c-.91.92-2.09 3.2 0 5.27a.75.75 0 0 0 .82.16c.09-.03.17-.09.24-.15a.74.74 0 0 0 0-1.06c-1.16-1.15-.77-2.39-.02-3.16l4.24-4.22a2.2 2.2 0 0 1 1.58-.65c.6 0 1.16.23 1.58.65.86.87.86 2.29 0 3.16L12.7 8.47a.74.74 0 0 0 1.04 1.05l3.17-3.16a3.73 3.73 0 0 0 0-5.27h.03zM9.54 7.4a.74.74 0 0 0 0 1.06c1.16 1.15.76 2.39 0 3.16l-4.22 4.22c-.42.42-.99.65-1.59.65a2.23 2.23 0 0 1-1.58-3.82l3.17-3.16A.73.73 0 0 0 5.54 9a.78.78 0 0 0-.22-.52.77.77 0 0 0-1.05 0L1.1 11.64A3.72 3.72 0 0 0 3.74 18c1 0 1.94-.39 2.65-1.1l4.23-4.2c.21-.22.94-1.02 1.13-2.2.18-1.12-.2-2.15-1.12-3.07-.27-.27-.78-.27-1.06 0l-.02-.02z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a>
         </div>
     </div>
@@ -406,11 +413,11 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
     <div class="share-hover inline">
         <span class="share-button inline"><svg fill="currentColor" width="25" height="25" class="inline"><g fill-rule="evenodd"><path d="M15.6 5a.42.42 0 0 0 .17-.3.42.42 0 0 0-.12-.33l-2.8-2.79a.5.5 0 0 0-.7 0l-2.8 2.8a.4.4 0 0 0-.1.32c0 .12.07.23.16.3h.02a.45.45 0 0 0 .57-.04l2-2V10c0 .28.23.5.5.5s.5-.22.5-.5V2.93l2.02 2.02c.08.07.18.12.3.13.11.01.21-.02.3-.08v.01"></path><path d="M18 7h-1.5a.5.5 0 0 0 0 1h1.6c.5 0 .9.4.9.9v10.2c0 .5-.4.9-.9.9H6.9a.9.9 0 0 1-.9-.9V8.9c0-.5.4-.9.9-.9h1.6a.5.5 0 0 0 .35-.15A.5.5 0 0 0 9 7.5a.5.5 0 0 0-.15-.35A.5.5 0 0 0 8.5 7H7a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h11a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"></path></g></svg></span>
         <div class="share-icons inline" id="post-end-icons">
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=A falta de CI, bueno es Husky&url=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="facebook" href="https://facebook.com/sharer.php?u=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="reddit" href="http://www.reddit.com/submit?url=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html&title=A falta de CI, bueno es Husky" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
-            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html&title=A falta de CI, bueno es Husky&summary=&source=https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a class="email" href="mailto:?subject=A falta de CI, bueno es Husky&body=%0A%0ARead more here: https://oscardemadriz.github.io/missing-ci-use-husky-copy.html" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=A falta de CI, bueno es Husky&url=https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="facebook" href="https://facebook.com/sharer.php?u=https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="reddit" href="http://www.reddit.com/submit?url=https://oscardemadriz.github.io/missing-ci-use-husky.html&title=A falta de CI, bueno es Husky" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://oscardemadriz.github.io/missing-ci-use-husky.html&title=A falta de CI, bueno es Husky&summary=&source=https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="email" href="mailto:?subject=A falta de CI, bueno es Husky&body=%0A%0ARead more here: https://oscardemadriz.github.io/missing-ci-use-husky.html" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <a class="copy-link" onclick="copyToClipboard()" title="Copy to clipboard" rel="nofollow" target="_blank"><svg width="20px" fill="currentColor" class="inline" viewBox="0 0 18 18"><path d="M16.94 1.1A3.7 3.7 0 0 0 14.3 0c-1 0-1.94.39-2.64 1.1L7.43 5.3c-.91.92-2.09 3.2 0 5.27a.75.75 0 0 0 .82.16c.09-.03.17-.09.24-.15a.74.74 0 0 0 0-1.06c-1.16-1.15-.77-2.39-.02-3.16l4.24-4.22a2.2 2.2 0 0 1 1.58-.65c.6 0 1.16.23 1.58.65.86.87.86 2.29 0 3.16L12.7 8.47a.74.74 0 0 0 1.04 1.05l3.17-3.16a3.73 3.73 0 0 0 0-5.27h.03zM9.54 7.4a.74.74 0 0 0 0 1.06c1.16 1.15.76 2.39 0 3.16l-4.22 4.22c-.42.42-.99.65-1.59.65a2.23 2.23 0 0 1-1.58-3.82l3.17-3.16A.73.73 0 0 0 5.54 9a.78.78 0 0 0-.22-.52.77.77 0 0 0-1.05 0L1.1 11.64A3.72 3.72 0 0 0 3.74 18c1 0 1.94-.39 2.65-1.1l4.23-4.2c.21-.22.94-1.02 1.13-2.2.18-1.12-.2-2.15-1.12-3.07-.27-.27-.78-.27-1.06 0l-.02-.02z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a>
         </div>
     </div>
@@ -455,15 +462,16 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
   <h2 class="page-subtitle">Recent posts</h2>
   <div class="recent-list">
     
+    
+    <div class="recent-item">
       
-        <div class="recent-item">
-          
-          
+      
 
-          <a href="./update-jsonb-postgres.html" class="recent-item-img" style="background: url('./assets/img/posts/20210915/db header.png') center no-repeat; background-size: cover;">
-            <div class="recent-item-title">
-              <span>Update JSONB</span>
-              
+      <a href="./update-jsonb-postgres.html" class="recent-item-img"
+        style="background: url('./uploads/db-header.png') center no-repeat; background-size: cover;">
+        <div class="recent-item-title">
+          <span>Update JSONB</span>
+          
 
   <span class = "recent-item-meta">
   
@@ -481,20 +489,21 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
   
   </span>
 
-            </div>
-          </a>
         </div>
-      
+      </a>
+    </div>
     
+    
+    
+    <div class="recent-item">
       
-        <div class="recent-item">
-          
-          
+      
 
-          <a href="./git-tips.html" class="recent-item-img" style="background: url('./assets/img/posts/stock/github_logo.jpg') center no-repeat; background-size: cover;">
-            <div class="recent-item-title">
-              <span>Git Tips</span>
-              
+      <a href="./git-tips.html" class="recent-item-img"
+        style="background: url('./uploads/github_logo.jpg') center no-repeat; background-size: cover;">
+        <div class="recent-item-title">
+          <span>Git Tips</span>
+          
 
   <span class = "recent-item-meta">
   
@@ -512,20 +521,21 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
   
   </span>
 
-            </div>
-          </a>
         </div>
-      
+      </a>
+    </div>
     
+    
+    
+    <div class="recent-item">
       
-        <div class="recent-item">
-          
-          
+      
 
-          <a href="./missing-ci-use-husky-copy.html" class="recent-item-img" style="background: url('./assets/img/posts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg') center no-repeat; background-size: cover;">
-            <div class="recent-item-title">
-              <span>A falta de CI, bueno es Husky</span>
-              
+      <a href="./missing-ci-use-husky.html" class="recent-item-img"
+        style="background: url('./uploads/james-padolsey-6WneSv56YVI-unsplash.jpg') center no-repeat; background-size: cover;">
+        <div class="recent-item-title">
+          <span>A falta de CI, bueno es Husky</span>
+          
 
   <span class = "recent-item-meta">
   
@@ -543,20 +553,21 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
   
   </span>
 
-            </div>
-          </a>
         </div>
-      
+      </a>
+    </div>
     
+    
+    
+    <div class="recent-item">
       
-        <div class="recent-item">
-          
-          
+      
 
-          <a href="./using-docker-and-wordpress.html" class="recent-item-img" style="background: url('./assets/img/posts/2109/whale.jpg') center no-repeat; background-size: cover;">
-            <div class="recent-item-title">
-              <span>Docker + Wordpress</span>
-              
+      <a href="./using-docker-and-wordpress.html" class="recent-item-img"
+        style="background: url('./uploads/whale.jpg') center no-repeat; background-size: cover;">
+        <div class="recent-item-title">
+          <span>Docker + Wordpress</span>
+          
 
   <span class = "recent-item-meta">
   
@@ -574,14 +585,13 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
   
   </span>
 
-            </div>
-          </a>
         </div>
-      
+      </a>
+    </div>
+    
     
   </div>
 </div> <!-- End Recent-Box -->
-
         <div class="newsletter" id="mc_embed_signup">
   <h2 class="page-subtitle">Newsletter</h2>
   <div class="form-container">
@@ -653,7 +663,6 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
 </footer> <!-- End Footer -->
 
 </div>
-
     <div class="top" title="Top">
       <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-angle-up fa-w-8 fa-2x"><path fill="currentColor" d="M136.5 185.1l116 117.8c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L128 224.7 27.6 326.9c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17l116-117.8c4.7-4.6 12.3-4.6 17 .1z" class=""></path></svg>
     </div>
@@ -704,7 +713,7 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
     if (nightShift) {
         logo.setAttribute("src", "./assets/img/branding/MVM-logo-full-dark.svg");
     } else {
-        logo.setAttribute("src", "./assets/img/branding/MVM-logo-full.svg");
+        logo.setAttribute("src", "./uploads/seta.png");
     }
     setTimeout(function() {
         sw.checked = nightShift ? true : false;
@@ -782,14 +791,14 @@ git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
     }
 
     function copyToClipboard() {
-      navigator.clipboard.writeText('https://oscardemadriz.github.io/missing-ci-use-husky-copy.html').then(function() {
+      navigator.clipboard.writeText('https://oscardemadriz.github.io/missing-ci-use-husky.html').then(function() {
       alerts = document.getElementsByClassName('alert')
       for (i=0; i < alerts.length; i++){
         alerts[i].innerHTML='\u00ABlink copied\u00BB';
         setTimeout((function(i){ return function(){alerts[i].innerHTML='';}})(i), 1600 );
       };
       }, function() {
-        prompt("Unable to copy, please use this link:", "https://oscardemadriz.github.io/missing-ci-use-husky-copy.html");
+        prompt("Unable to copy, please use this link:", "https://oscardemadriz.github.io/missing-ci-use-husky.html");
       });
     }
 

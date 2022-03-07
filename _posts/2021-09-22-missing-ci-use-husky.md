@@ -3,7 +3,7 @@ layout: post
 read_time: true
 show_date: true
 title: "A falta de CI, bueno es Husky"
-img: posts/stock/james-padolsey-6WneSv56YVI-unsplash.jpg
+img: uploads/james-padolsey-6WneSv56YVI-unsplash.jpg
 date: 2021-09-22
 tags: [ci, devops]
 category: tutorials

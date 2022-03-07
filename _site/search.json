@@ -24,7 +24,7 @@
       "title"       : "A falta de CI, bueno es Husky",
       "category"    : "tutorials",
       "tags"        : "ci, devops",
-      "url"         : "./missing-ci-use-husky-copy.html",
+      "url"         : "./missing-ci-use-husky.html",
       "date"        : "2021-09-22 00:00:00 +0200",
       "description" : "",
       "content"     : "En caso de que tu proyecto no pueda usar herramientas de integración continua en la nube como puede ser CircleCi o Jenkins.O por otro lado que quieres que los tests se hagan antes del commit o comprobar el commit message, 🐶 Husky es tu amigo ;)Vamos a crear un repo y un proyecto de node vacio así en un moment:mkdir husky-testcd husky-testgit initnpm init -yPerfect tenemos repo y tenemos proyecto.Para instalar Husky usamos la guia officialnpx husky-initnpm install # npmCon Husky instalado podemos especificar Hooks que se van a ejecutar cuando por ejemplo hagamos un comando, por ejemplo añadimos un echo simple.npx husky add .husky/pre-commit \"echo 'You are about to commit😎, nice job!'\" #For Linux, in Windows does not workO modificar el archivo .husky/pre-commit :#!/bin/sh. \"$(dirname \"$0\")/_/husky.sh\"echo 'You are about to commit😎, nice job!'Ahora solo falta probar que funciona haciendo un commit:git add .git commit -m \"TEST\"Y tenemos instalado el Hook perfectamente:You are about to commit😎, nice job![master (root-commit) a609faa] TEST 14 files changed, 348 insertions(+)"
@@ -47,7 +47,7 @@
       "url"         : "./tips-windows-productivy.html",
       "date"        : "2021-09-16 00:00:00 +0200",
       "description" : "Importa y exporta las cadenas de conexión para facilitar la vida a tus compañeros",
-      "content"     : "Para buscar en el historico de la terminal se usa:Ctrl + R Si pulsas Win + V en vez de Ctrl + V habilitiras el historico de Portapapeles que bueno, te dejo que lo descubras por ti mism@ ;)"
+      "content"     : "Para buscar en el historico de la terminal se usa:Ctrl + R"
     } ,
   
     {

@@ -6,7 +6,7 @@
   "tag" : "ci",
   "posts" : [
       
-      "./missing-ci-use-husky-copy.html"
+      "./missing-ci-use-husky.html"
       
     ]
   } ,
@@ -38,7 +38,7 @@
   "tag" : "devops",
   "posts" : [
       
-      "./missing-ci-use-husky-copy.html"
+      "./missing-ci-use-husky.html"
       
     ]
   } ,
