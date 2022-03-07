@@ -1,6 +1,12 @@
 {
   "posts" : [
     
+    "./update-jsonb-postgres.html",
+    
+    "./git-tips.html",
+    
+    "./missing-ci-use-husky-copy.html",
+    
     "./using-docker-and-wordpress.html",
     
     "./tips-windows-productivy.html",

@@ -10,9 +10,9 @@ category: tutorials
 author: Oscar Sanchez
 description: "Importa y exporta las cadenas de conexión para facilitar la vida a tus compañeros"
 ---
-Para buscar en el historico de la terminal se usa:
+* Para buscar en el historico de la terminal se usa:
 `Ctrl + R`
 
 <center><img src='./assets/img/posts/20210915/post-2-reverse.png'></center>
 
-
+* Si pulsas `Win + V` en vez de `Ctrl + V` habilitiras el historico de Portapapeles que bueno, te dejo que lo descubras por ti mism@ ;)

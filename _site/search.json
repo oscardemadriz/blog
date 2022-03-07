@@ -1,6 +1,36 @@
 [
   
     {
+      "title"       : "Update JSONB",
+      "category"    : "tutorials",
+      "tags"        : "db, tips",
+      "url"         : "./update-jsonb-postgres.html",
+      "date"        : "2021-11-15 00:00:00 +0100",
+      "description" : "Necesitas un Update en un JSONB",
+      "content"     : "Si"
+    } ,
+  
+    {
+      "title"       : "Git Tips",
+      "category"    : "tutorials",
+      "tags"        : "tips, git",
+      "url"         : "./git-tips.html",
+      "date"        : "2021-09-24 00:00:00 +0200",
+      "description" : "",
+      "content"     : "Git hace magía y ha veces los mejores hechizos son simples como: Deshace el último commit:git reset HEAD~1 Crea un Zip con los archivos del repositorio (excluyendo las entradas del .gitignore):git archive HEAD -o backup.zip Photo by Xataka"
+    } ,
+  
+    {
+      "title"       : "A falta de CI, bueno es Husky",
+      "category"    : "tutorials",
+      "tags"        : "ci, devops",
+      "url"         : "./missing-ci-use-husky-copy.html",
+      "date"        : "2021-09-22 00:00:00 +0200",
+      "description" : "",
+      "content"     : "En caso de que tu proyecto no pueda usar herramientas de integración continua en la nube como puede ser CircleCi o Jenkins.O por otro lado que quieres que los tests se hagan antes del commit o comprobar el commit message, 🐶 Husky es tu amigo ;)Vamos a crear un repo y un proyecto de node vacio así en un moment:mkdir husky-testcd husky-testgit initnpm init -yPerfect tenemos repo y tenemos proyecto.Para instalar Husky usamos la guia officialnpx husky-initnpm install # npmCon Husky instalado podemos especificar Hooks que se van a ejecutar cuando por ejemplo hagamos un comando, por ejemplo añadimos un echo simple.npx husky add .husky/pre-commit \"echo 'You are about to commit😎, nice job!'\" #For Linux, in Windows does not workO modificar el archivo .husky/pre-commit :#!/bin/sh. \"$(dirname \"$0\")/_/husky.sh\"echo 'You are about to commit😎, nice job!'Ahora solo falta probar que funciona haciendo un commit:git add .git commit -m \"TEST\"Y tenemos instalado el Hook perfectamente:You are about to commit😎, nice job![master (root-commit) a609faa] TEST 14 files changed, 348 insertions(+)"
+    } ,
+  
+    {
       "title"       : "Docker + Wordpress",
       "category"    : "tutorials",
       "tags"        : "docker, tips",
@@ -17,7 +47,7 @@
       "url"         : "./tips-windows-productivy.html",
       "date"        : "2021-09-16 00:00:00 +0200",
       "description" : "Importa y exporta las cadenas de conexión para facilitar la vida a tus compañeros",
-      "content"     : "Para buscar en el historico de la terminal se usa:Ctrl + R"
+      "content"     : "Para buscar en el historico de la terminal se usa:Ctrl + R Si pulsas Win + V en vez de Ctrl + V habilitiras el historico de Portapapeles que bueno, te dejo que lo descubras por ti mism@ ;)"
     } ,
   
     {

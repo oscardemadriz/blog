@@ -1,0 +1,40 @@
+I"�
+<p>En caso de que tu proyecto no pueda usar herramientas de integración continua en la nube como puede ser CircleCi o Jenkins.</p>
+
+<p>O por otro lado que quieres que los tests se hagan antes del commit o comprobar el commit message, 🐶 Husky es tu amigo ;)</p>
+
+<p>Vamos a crear un repo y un proyecto de node vacio así en un moment:</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>husky-test
+<span class="nb">cd </span>husky-test
+git init
+npm init <span class="nt">-y</span>
+</code></pre></div></div>
+<p>Perfect tenemos repo y tenemos proyecto.
+Para instalar Husky usamos la <a href="https://typicode.github.io/husky/#/">guia official</a></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx husky-init
+npm <span class="nb">install</span>       <span class="c"># npm</span>
+</code></pre></div></div>
+<p>Con Husky instalado podemos especificar Hooks que se van a ejecutar cuando por ejemplo hagamos un comando, por ejemplo añadimos un echo simple.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx husky add .husky/pre-commit <span class="s2">"echo 'You are about to commit😎, nice job!'"</span>  <span class="c">#For Linux, in Windows does not work</span>
+</code></pre></div></div>
+
+<p>O modificar el archivo <code class="language-plaintext highlighter-rouge">.husky/pre-commit</code> :</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/sh</span>
+<span class="nb">.</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">dirname</span> <span class="s2">"</span><span class="nv">$0</span><span class="s2">"</span><span class="si">)</span><span class="s2">/_/husky.sh"</span>
+
+<span class="nb">echo</span> <span class="s1">'You are about to commit😎, nice job!'</span>
+</code></pre></div></div>
+<p>Ahora solo falta probar que funciona haciendo un commit:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add <span class="nb">.</span>
+git commit <span class="nt">-m</span> <span class="s2">"TEST"</span>
+</code></pre></div></div>
+<p>Y tenemos instalado el Hook perfectamente:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are about to commit😎, <span class="nb">nice </span>job!
+<span class="o">[</span>master <span class="o">(</span>root-commit<span class="o">)</span> a609faa] TEST
+ 14 files changed, 348 insertions<span class="o">(</span>+<span class="o">)</span>
+</code></pre></div></div>
+:ET
