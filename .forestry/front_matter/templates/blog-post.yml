@@ -5,12 +5,15 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
 - type: boolean
   name: read_time
   label: read_time
+  default: true
 - type: boolean
   name: show_date
   label: show_date
+  default: true
 - type: text
   name: title
   label: title
@@ -20,6 +23,7 @@ fields:
 - type: datetime
   name: date
   label: date
+  default: now
 - type: list
   name: tags
   label: tags
@@ -29,5 +33,6 @@ fields:
 - type: text
   name: author
   label: author
+  default: Oscar Sanchez
 pages:
 - _posts/2022-03-06-my-test.md
