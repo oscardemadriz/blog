@@ -3,6 +3,16 @@
 [   
       
   {
+  "tag" : "ci",
+  "posts" : [
+      
+      "./missing-ci-use-husky.html"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "conexiones",
   "posts" : [
       
@@ -23,6 +33,16 @@
     
       
   {
+  "tag" : "devops",
+  "posts" : [
+      
+      "./missing-ci-use-husky.html"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "docker",
   "posts" : [
       
@@ -33,8 +53,20 @@
     
       
   {
+  "tag" : "git",
+  "posts" : [
+      
+      "./git-tips.html"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "tips",
   "posts" : [
+      
+      "./git-tips.html",
       
       "./using-docker-and-wordpress.html",
       

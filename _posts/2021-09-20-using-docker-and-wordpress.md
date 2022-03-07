@@ -3,7 +3,7 @@ layout: post
 read_time: true
 show_date: true
 title: "Docker + Wordpress"
-img: posts/2109/whale.jpg
+img: uploads/whale.jpg
 date: 2021-09-20
 tags: [docker, tips]
 category: tutorials

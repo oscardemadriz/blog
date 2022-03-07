@@ -1,4 +1,4 @@
-I"ˆ<p>En ocasiones preparar el entorno de trabajo para comenzar en un proyecto puede ser desde tan simple como <code class="language-plaintext highlighter-rouge">git clone</code> como tener que bajar una VPN, realizar una tarea que perfectamente podria ser una prueba de un Escape room o parte de un CTF.</p>
+I"v<p>En ocasiones preparar el entorno de trabajo para comenzar en un proyecto puede ser desde tan simple como <code class="language-plaintext highlighter-rouge">git clone</code> como tener que bajar una VPN, realizar una tarea que perfectamente podria ser una prueba de un Escape room o parte de un CTF.</p>
 
 <p>En este caso, tras trasterar con el <strong>DBeaver</strong>, he encontrado que se pueden exportar las carpetas de proyecto tan simple como:</p>
 
@@ -9,7 +9,7 @@
 <p><strong>Archivo -&gt; Exportar</strong>
 Y podremos exportar el fichero siguiendo el asistente:</p>
 
-<center><img src="./assets/img/posts/20210915/post 1 dbeaber export.png" /></center>
+<center><img src="./uploads/post-1-dbeaber expo-t.png" /></center>
 
 <p>Una vez exportado, se genera un archivo <code class="language-plaintext highlighter-rouge">.dbp</code> el cual servira para importar.</p>
 

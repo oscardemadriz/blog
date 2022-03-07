@@ -3,7 +3,7 @@ layout: post
 read_time: true
 show_date: true
 title: "Exportando conexiones DBeaver"
-img: posts/20210915/db header.png
+img: uploads/db-header.png
 date: 2021-09-15
 tags: [db, tips, conexiones]
 category: tutorials
@@ -21,7 +21,7 @@ En este caso, tras trasterar con el **DBeaver**, he encontrado que se pueden exp
 **Archivo -> Exportar**
 Y podremos exportar el fichero siguiendo el asistente:
 
-<center><img src='./assets/img/posts/20210915/post 1 dbeaber export.png'></center>
+<center><img src='./uploads/post-1-dbeaber expo-t.png'></center>
 
 Una vez exportado, se genera un archivo `.dbp` el cual servira para importar.
 

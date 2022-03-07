@@ -1,6 +1,10 @@
 {
   "posts" : [
     
+    "./git-tips.html",
+    
+    "./missing-ci-use-husky.html",
+    
     "./using-docker-and-wordpress.html",
     
     "./tips-windows-productivy.html",
