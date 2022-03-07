@@ -245,45 +245,6 @@
 		<div class="post">
 			
 
-			<a class="post-list-title" href="./update-jsonb-postgres.html">Update JSONB</a>
-			
-
-  <span class = "post-card-meta">
-  
-  
-    <span class="meta-pre"></span>
-  
-  
-    
-      
-      <span class="page_meta-date">
-        <time datetime="2021-11-15T00:00:00+01:00">November 15, 2021</time>
-      </span>
-    
-    
-      <span class="meta-sep"></span>
-    
-  
-  
-    
-    
-    <span class="page_meta-readtime">
-      
-        less than 1 minute read
-      
-    </span>
-  
-  
-  </span>
-
-			<div class="post-excerpt">
-				<p>Si</p><a class="read-more" href="./update-jsonb-postgres.html"> read more</a>
-			</div>
-		</div>
-	
-		<div class="post">
-			
-
 			<a class="post-list-title" href="./git-tips.html">Git Tips</a>
 			
 
@@ -356,6 +317,45 @@
 
 			<div class="post-excerpt">
 				<p>En caso de que tu proyecto no pueda usar herramientas de integración continua en la nube como puede ser CircleCi o Jenkins.</p><p>O por otro lado que quieres que los tests se hagan antes del commit o comprobar el commit message, 🐶 Husky es tu amigo ;)</p><p>Vamos a crear un repo y un proyecto de node vacio así en un moment:</p><div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>husky-test<span class="nb">cd </span>husky-testgit initnpm init <span class="nt">-y</span></code></pre></div></div><p>Perfect tenemos repo y tenemos proyecto.Para instalar Husky usamos la <a href="https://typicode.github.io/husky/#/">guia official</a></p><div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx husky-initnpm <span class="nb">install</span> <span class="c"># npm</span></code></pre></div></div><p>Con Husky instalado podemos especificar Hooks que...<a class="read-more" href="./missing-ci-use-husky.html"> read more</a>
+			</div>
+		</div>
+	
+		<div class="post">
+			
+
+			<a class="post-list-title" href="./using-docker-and-wordpress.html">Docker + Wordpress</a>
+			
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2021-09-20T00:00:00+02:00">September 20, 2021</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+			<div class="post-excerpt">
+				<p>En uno de los proyectos en los que estamos trabajando para un cliente, hemos tenido que levantar un wordpress con varias extensiones, para ello partimos de la base de wordpress y añadimos las extensiones necesarias en el <code class="language-plaintext highlighter-rouge">Dockerfile</code> para generar la imagen lista:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">FROM wordpress:4.9 as my-wordpress</span><span class="s">RUN docker-php-ext-install mbstring &amp;&amp; docker-php-ext-install exif</span></code></pre></div></div><p>El comando <code class="language-plaintext highlighter-rouge">docker-php-ext</code> añadirá las extensiones directamente al Apache.</p><p>El siguiente paso sería generar un <code class="language-plaintext highlighter-rouge">docker-compose.yml</code> con la DB:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">version</span><span class="pi">:</span> <span class="s2">"</span><span class="s">3.3"</span><span class="na">services</span><span class="pi">:</span> <span class="na">db</span><span class="pi">:</span> <span class="na">image</span><span class="pi">:</span> <span class="s">mysql:5.7</span> <span...<a class="read-more" href="./using-docker-and-wordpress.html"> read more</a>
 			</div>
 		</div>
 	

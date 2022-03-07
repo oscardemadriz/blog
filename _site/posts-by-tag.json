@@ -26,8 +26,6 @@
   "tag" : "db",
   "posts" : [
       
-      "./update-jsonb-postgres.html",
-      
       "./import-export-dbeaver.html"
       
     ]
@@ -67,8 +65,6 @@
   {
   "tag" : "tips",
   "posts" : [
-      
-      "./update-jsonb-postgres.html",
       
       "./git-tips.html",
       

@@ -1,16 +1,6 @@
 [
   
     {
-      "title"       : "Update JSONB",
-      "category"    : "tutorials",
-      "tags"        : "db, tips",
-      "url"         : "./update-jsonb-postgres.html",
-      "date"        : "2021-11-15 00:00:00 +0100",
-      "description" : "Necesitas un Update en un JSONB",
-      "content"     : "Si"
-    } ,
-  
-    {
       "title"       : "Git Tips",
       "category"    : "tutorials",
       "tags"        : "tips, git",

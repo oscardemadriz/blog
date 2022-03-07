@@ -1,8 +1,6 @@
 {
   "posts" : [
     
-    "./update-jsonb-postgres.html",
-    
     "./git-tips.html",
     
     "./missing-ci-use-husky.html",
