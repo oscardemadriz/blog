@@ -37,3 +37,4 @@ fields:
   default: Oscar Sanchez
 pages:
 - _posts/2022-03-06-my-test.md
+- _posts/solucionando-las-migraciones-en-strapi.md
