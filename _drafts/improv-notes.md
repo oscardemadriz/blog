@@ -19,19 +19,21 @@ Calentamientos:
   * Varias palmadas
   * Historia
   * Nombres
-* Bunny Bunny, toki toki 
+* Bunny Bunny, toki toki
 * Convergencia
   * Gestual
 * Pilla pilla
   * Virus y contravirus
 * Gyaaa
 * Historias a una palabra
-  * Frases a lo Fito, 
+  * Frases a lo Fito,
   * Completar una historia solo con una palabra cada uno
 * Pasar un gesto al compañero y evitar que no se pierda
   * Mano arriba, mano abajo y palmada en centro. Después se pasan nombres manteniendo el ritmo (Oscar se lo manda a Eva, Eva se lo manda a Fer)
 * En el mundo de XXX, Chistaco
 * Música caminar y recrear. Uno narra y hay que adaptarse
+* Los 8, vas contando desde 8 con cada miembro (brazo d, brazo i, pierna d, pierna i) y en cada numero miras a otra persona
+* Los 7, con el uno numero, con el dos cuatro, con el tres ZASCA y multireccional, cuatro es dos, cinco es una fruta y no vale repetir, seis numero y siete el doble con las dos manos y la mano encima señala la dirección
 
 Dinámicas
 
@@ -60,7 +62,8 @@ Juegos
 * Abecedario
 * Cruzada
 * Subtitulada / Doblada
-* + menos y otra
+* 
+  * menos y otra
 * Prota secun
 * El asesino / Boris
 * Tostadora
