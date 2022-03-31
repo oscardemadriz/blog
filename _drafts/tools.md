@@ -12,4 +12,4 @@ category: ''
 ---
 Herramientas que uso en el día a día:
 
-[https://docs.microsoft.com/es-es/sysinternals/downloads/zoomit](https://docs.microsoft.com/es-es/sysinternals/downloads/zoomit "ZoomIT")
+[Zoomit](https://docs.microsoft.com/es-es/sysinternals/downloads/zoomit "ZoomIT")
