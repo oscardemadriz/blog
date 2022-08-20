@@ -13,3 +13,4 @@
 .liquidrc
 temp
 node_modules
+.jekyll-cache
