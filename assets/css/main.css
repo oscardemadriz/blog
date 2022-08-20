@@ -829,6 +829,12 @@ svg.menu-icon-house {
 .post-card {
   position: relative;
 }
+.post-card-image-photo {
+  
+  min-height: 450px;
+  
+}
+
 .post-card-image {
   display: block;
   width: 100%;

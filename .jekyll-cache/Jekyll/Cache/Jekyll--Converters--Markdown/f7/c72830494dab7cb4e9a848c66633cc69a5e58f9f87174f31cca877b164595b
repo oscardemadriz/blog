@@ -1,4 +1,0 @@
-I"s<p>En uno de los proyectos en los que estamos trabajando para un cliente, hemos tenido que levantar un wordpress con varias extensiones, para ello partimos de la base de wordpress y añadimos las extensiones necesarias en el <code class="language-plaintext highlighter-rouge">Dockerfile</code> para generar la imagen lista:
-```yaml
-FROM wordpress:4.9 as my-wordpress</p>
-:ET
