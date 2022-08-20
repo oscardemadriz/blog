@@ -1,7 +1,29 @@
 demo site now [mirrored](https://weathered-bread-8229.on.fleek.co/) in [IPFS](https://github.com/ipfs/ipfs#quick-summary)!
 
+# How to set up
+
+Install [Jekyll dependencies](https://jekyllrb.com/docs/installation/ubuntu/) :
+
+```bash
+ sudo apt install ruby-full build-essential zlib1g-dev -y
+ echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+gem install jekyll bundler
+
+```
+
+## Run the site:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
 # Jekyll theme: Adam Blog 2.0
-by [Armando Maynez](https://github.com/amaynez) based on [V1.0](https://github.com/artemsheludko/adam-blog) by [Artem Sheludko](https://github.com/artemsheludko). 
+
+by [Armando Maynez](https://github.com/amaynez) based on [V1.0](https://github.com/artemsheludko/adam-blog) by [Artem Sheludko](https://github.com/artemsheludko).
 
 Adam Blog 2.0 is a Jekyll theme that was built to be 100% compatible with [GitHub Pages](https://pages.github.com/). If you are unfamiliar with GitHub Pages, you can check out [their documentation](https://help.github.com/categories/github-pages-basics/) for more information. [Jonathan McGlone's guide](http://jmcglone.com/guides/github-pages/) on creating and hosting a personal site on GitHub is also a good resource.
 
@@ -14,8 +36,9 @@ Jekyll is a simple, blog-aware, static site generator for personal, project, or 
 The beauty of hosting your website on GitHub is that you don't have to actually have Jekyll installed on your computer. Everything can be done through the GitHub code editor, with minimal knowledge of how to use Jekyll or the command line. All you have to do is add your posts to the `_posts` directory and edit the `_config.yml` file to change the site settings. With some rudimentary knowledge of HTML and CSS, you can even modify the site to your liking. This can all be done through the GitHub code editor, which acts like a content management system (CMS).
 
 ## Features of v2.0:
+
 - SEO meta tags
-- Dark mode ([configurable in _config.yml file](https://github.com/the-mvm/the-mvm.github.io/blob/a8d4f781bfbc4107b4842433701d28f5bbf1c520/_config.yml#L10))
+- Dark mode ([configurable in \_config.yml file](https://github.com/the-mvm/the-mvm.github.io/blob/a8d4f781bfbc4107b4842433701d28f5bbf1c520/_config.yml#L10))
 - automatic [sitemap.xml](http://the-mvm.github.io/sitemap.xml)
 - automatic [archive page](http://the-mvm.github.io/archive/) with infinite scrolling capability
 - [new page](https://the-mvm.github.io/tag/?tag=Coding) of posts filtered by a single tag (without needing autopages from paginator V2), also with infinite scrolling
@@ -25,19 +48,20 @@ The beauty of hosting your website on GitHub is that you don't have to actually 
 - read time per post automatically calculated
 - responsive post tags and social share icons (sticky or inline)
 - included linkedin, reddit and bandcamp icons
-- *copy link to clipboard* sharing option (and icon)
+- _copy link to clipboard_ sharing option (and icon)
 - view on github link button (optional per post)
 - MathJax support (optional per post)
 - tag cloud in the home page
 - 'back to top' button
-- comments 'courtain' to mask the disqus interface until the user clicks on it ([configurable in _config.yml](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/_config.yml#L13))
+- comments 'courtain' to mask the disqus interface until the user clicks on it ([configurable in \_config.yml](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/_config.yml#L13))
 - [CSS variables](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/assets/css/main.css#L8) to make it easy to customize all colors and fonts
-- added several themes for code syntax highlight [configurable from the _config.yml file](https://github.com/the-mvm/the-mvm.github.io/blob/e146070e9348c2e8f46cb90e3f0c6eb7b59c041a/_config.yml#L44).
+- added several themes for code syntax highlight [configurable from the \_config.yml file](https://github.com/the-mvm/the-mvm.github.io/blob/e146070e9348c2e8f46cb90e3f0c6eb7b59c041a/_config.yml#L44).
 - responsive footer menu and footer logo ([if setup in the config file](https://github.com/the-mvm/the-mvm.github.io/blob/d4a67258912e411b639bf5acd470441c4c219544/_config.yml#L7))
 - search shows results based on full post content, not just the description
-- smoother menu animations 
+- smoother menu animations
 
 ## Features preserved from v1.0
+
 - [Google Fonts](https://fonts.google.com/)
 - [Font Awesome icons](http://fontawesome.io/)
 - [Disqus](https://disqus.com/)
@@ -88,13 +112,14 @@ Head over to the `_posts` directory to view all the posts that are currently on 
 ## GitHub Pages Installation
 
 ### **STEP 1.**
+
 [Fork this repository](https://github.com/the-mvm/the-mvm.github.io/fork/) into your own account.
 
 #### Using Github Pages
 
 You can host your Jekyll site for free with Github Pages. [Click here](https://pages.github.com/) for more information.
 
- When forking, if you use as destination a repository named ``USERNAME.github.io`` then your url will be ``https://USERNAME.github.io/``, else ``https://USERNAME.github.io/REPONAME/``) and your site will be published to the gh-pages branch. Note: if you are hosting several sites under the same GitHub username, then you will have to use [Project Pages instead of User Pages](https://help.github.com/articles/user-organization-and-project-pages/) - just change the repository name to something other than 'http://USERNAME.github.io'.
+When forking, if you use as destination a repository named `USERNAME.github.io` then your url will be `https://USERNAME.github.io/`, else `https://USERNAME.github.io/REPONAME/`) and your site will be published to the gh-pages branch. Note: if you are hosting several sites under the same GitHub username, then you will have to use [Project Pages instead of User Pages](https://help.github.com/articles/user-organization-and-project-pages/) - just change the repository name to something other than 'http://USERNAME.github.io'.
 
 ##### A configuration tweak if you're using a gh-pages branch
 
@@ -115,7 +140,8 @@ url: "https://github-username.github.io"
 This will ensure that the the correct relative path is constructed for your assets and posts.
 
 ### **STEP 2.**
-Modify ``_config.yml`` file, located in the root directory, with your data.
+
+Modify `_config.yml` file, located in the root directory, with your data.
 
 ```YAML
 # Site settings
@@ -157,24 +183,32 @@ paginate: 6 # number of items to show in the main page
 paginate_path: 'page:num'
 words_per_minute: 200 # default words per minute to be considered when calculating the read time of the blog posts
 ```
+
 ### **STEP 3.**
+
 To configure the newsletter, please create an account in https://mailchimp.com, set up a web signup form and paste the link from the embed signup form in the `config.yml` file:
+
 ```YAML
 # Newsletter
 mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
 ```
 
 ### **STEP 4.**
+
 To configure Disqus, set up a [Disqus site](https://disqus.com/admin/create/) with the same name as your site. Then, in `_config.yml`, edit the `disqus_identifier` value to enable.
+
 ```YAML
 # Disqus
 discus_identifier:  # Add your discus identifier
 comments_curtain: yes # leave empty to show the disqus embed directly
 ```
+
 More information on [how to set up Disqus](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/).
 
 ### **STEP 5.**
+
 Customize the site colors. Modify `/assets/css/main.css` as follows:
+
 ```CSS
 html {
   --shadow:       rgba(32,30,30,.3);
@@ -206,8 +240,11 @@ html[data-theme="dark"]  {
   --shadow:       rgba(180,179,167,.3);
 }
 ```
+
 ### **STEP 6.**
+
 Customize the site fonts. Modify `/assets/css/main.css` as follows:
+
 ```CSS
 ...
   --font1: 'Lora', charter, Georgia, Cambria, 'Times New Roman', Times, serif;/* body text */
@@ -220,12 +257,16 @@ Customize the site fonts. Modify `/assets/css/main.css` as follows:
   --font2-bold:       700;
 ...
 ```
+
 If you change the fonts, you need to also modify `/_includes/head.html` as follows:
 Uncomment and change the following line with your new fonts and font weights:
+
 ```HTML
 <link href="https://fonts.googleapis.com/css?family=Lora:400,600|Source+Sans+Pro:200,400,700" rel="stylesheet">
 ```
+
 Delete everything within `<style></style>` just before the line above:
+
 ```HTML
 <style>
 /* latin */
@@ -242,6 +283,7 @@ You will find example posts in your `/_posts/` directory. Go ahead and edit any 
 To add new posts, simply add a file in the `_posts` directory that follows the convention of `YYYY-MM-DD-name-of-post.md` and includes the necessary front matter. Take a look at any sample post to get an idea about how it works. If you already have a website built with Jekyll, simply copy over your posts to migrate to Adam Blog 2.0.
 
 The front matter options for each post are:
+
 ```YAML
 ---
 layout: post #ensure this one stays like this
@@ -257,12 +299,15 @@ github: username/reponame/ # set this to show a github button on the post
 toc: yes # leave empty or erase for no table of contents
 ---
 ```
+
 Edit your blogpost using markdown. [Here is a good guide about how to use it.](https://www.markdownguide.org/)
 
 ### **STEP 7.**
-Delete images inside of ``/assets/img/posts/`` and upload your own images for your posts.
+
+Delete images inside of `/assets/img/posts/` and upload your own images for your posts.
 
 ### **STEP 8.**
+
 Make sure Github Pages are turned on in the repository settings, and pointing to the main or master branch (where you cloned this repo).
 
 ## Additional documentation
@@ -281,7 +326,7 @@ Adam Blog 2.0/
 |  |  └── _sass                # Folder containing SCSS files
 |  |  └── main.css             # Main SCSS file
 |  |  └── highlighter          # Style sheet for code syntax highlighting
-|  └── img                     # 
+|  └── img                     #
 |     └── posts                # Images go here
 ├── _pages                     # Website pages (that are not posts)
 ├── _config.yml                # Site settings
@@ -334,17 +379,19 @@ Adam Blog 2.0 comes out of the box with [MathJax](https://www.mathjax.org/), whi
 \(\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t\).
 </p>
 ```
-![rendered mathjax](/assets/img/template_screenshots/MathjaxRendered.jpg)
 
+![rendered mathjax](/assets/img/template_screenshots/MathjaxRendered.jpg)
 
 ### Syntax Highlighting
 
 Adam Blog 2.0 provides syntax highlighting through [fenced code blocks](https://help.github.com/articles/creating-and-highlighting-code-blocks/). Syntax highlighting allows you to display source code in different colors and fonts depending on what programming language is being displayed. You can find the full list of supported programming languages [here](https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers). Another option is to embed your code through [Gist](https://en.support.wordpress.com/gist/).
 
 You can choose the color theme for the syntax highlight in the `_config.yml` file:
+
 ```YAML
 highlight_theme: syntax-base16.monokai.dark # select a theme for the code highlighter
 ```
+
 See the [highlighter directory](https://github.com/the-mvm/the-mvm.github.io/tree/main/assets/css/highlighter) for reference on the options.
 
 ### Markdown
@@ -356,7 +403,7 @@ Jekyll offers support for GitHub Flavored Markdown, which allows you to format y
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
 [jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-gh]: https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
 
 ## Contributing
@@ -367,4 +414,4 @@ Adam Blog 2.0 has been designed as a base for users to customize and fit to thei
 
 ## Questions?
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to  [file a GitHub issue](https://github.com/the-mvm/the-mvm.github.io/issues/new).
+This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [file a GitHub issue](https://github.com/the-mvm/the-mvm.github.io/issues/new).
