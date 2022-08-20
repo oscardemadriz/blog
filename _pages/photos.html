@@ -1,0 +1,26 @@
+---
+layout: mansory-page
+title: About
+permalink: photos:output_ext
+---
+{% include calculate_relative_base.html %}
+
+<ol class="post-card-box clearfix">
+  {% for post in site.photos %}
+  {% include remove_double_slash.html %}
+  <li>
+    <div class="post-card">
+      <a href="{{ post_url }}" title="{{ post.title }}" class="post-card-image " 
+        style="background: url('{{ relativebase }}/{{ post.img }}') center no-repeat; background-size: cover; min-height: 450px;">
+      </a>
+      <div class="post-card-body">
+        <p class="post-card-title-and-meta">
+
+          <a href="{{ post_url }}" class="post-card-link">
+          </a>
+        </p>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ol>
